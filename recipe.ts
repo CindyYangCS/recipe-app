@@ -2,7 +2,6 @@ interface Ingredient {
     name: string;
     amount: number;
     unit: string;
-    isOptional: boolean;
 }
 
 interface Recipe {
@@ -14,4 +13,17 @@ interface Recipe {
     servings: number;
     ingredients: Ingredient[];
     instructions: string[];
+}
+
+function scaleRecipe(recipe: Recipe, newServings: number): Recipe {
+    const factor = newServings / recipe.servings;
+
+    return {
+        ...recipe,
+        servings: newServings,
+        ingredients: recipe.ingredients.map(ingredient => ({
+            ...ingredient,
+            amount: ingredient.amount * factor
+        }))
+    };
 }
