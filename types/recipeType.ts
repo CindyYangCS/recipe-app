@@ -1,10 +1,10 @@
-interface Ingredient {
+export interface Ingredient {
     name: string;
     amount: number;
     unit: string;
 }
 
-interface Recipe {
+export interface Recipe {
     id: string;
     category: string;
     name: string;
