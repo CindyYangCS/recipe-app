@@ -1,0 +1,73 @@
+[
+  {
+    "id": "1",
+    "category": "Breakfast",
+    "name": "Classic Fluffy Pancakes",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "ingredients": [
+      { "name": "All-purpose flour", "amount": 2, "unit": "cups" },
+      { "name": "Sugar", "amount": 2, "unit": "tbsp" },
+      { "name": "Baking powder", "amount": 2, "unit": "tsp" },
+      { "name": "Salt", "amount": 0.5, "unit": "tsp" },
+      { "name": "Milk", "amount": 1.5, "unit": "cups" },
+      { "name": "Unsalted butter (melted)", "amount": 4, "unit": "tbsp" },
+      { "name": "Egg", "amount": 1, "unit": "piece" }
+    ],
+    "instructions": [
+      "Whisk flour, sugar, baking powder, and salt together in a large bowl.",
+      "Make a well in the center and pour in the milk, melted butter, and egg.",
+      "Mix just until smooth; do not overmix.",
+      "Heat a lightly oiled griddle over medium-high heat.",
+      "Pour batter onto the griddle and brown on both sides. Serve hot."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Breakfast",
+    "name": "Garden Herb Omelette",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      { "name": "Eggs", "amount": 3, "unit": "pieces" },
+      { "name": "Butter", "amount": 1, "unit": "tbsp" },
+      { "name": "Fresh chives (chopped)", "amount": 1, "unit": "tbsp" },
+      { "name": "Fresh parsley (chopped)", "amount": 1, "unit": "tsp" },
+      { "name": "Cheddar cheese (shredded)", "amount": 0.25, "unit": "cup" },
+      { "name": "Salt and Pepper", "amount": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      "Whisk the eggs, herbs, salt, and pepper together in a small bowl until completely blended.",
+      "Melt the butter in a non-stick skillet over medium heat.",
+      "Pour in the egg mixture. Let it set slightly, then gently lift the edges to let raw egg run underneath.",
+      "When the top is mostly set but still slightly damp, sprinkle cheese over one half.",
+      "Fold the omelette in half, slide it onto a plate, and enjoy."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Dinner",
+    "name": "Creamy Tomato Basil Pasta",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      { "name": "Penne pasta", "amount": 12, "unit": "oz" },
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Garlic (minced)", "amount": 3, "unit": "cloves" },
+      { "name": "Crushed tomatoes", "amount": 28, "unit": "oz" },
+      { "name": "Heavy cream", "amount": 0.5, "unit": "cup" },
+      { "name": "Fresh basil leaves", "amount": 0.25, "unit": "cup" },
+      { "name": "Grated parmesan cheese", "amount": 0.25, "unit": "cup" }
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil and cook the penne according to package directions.",
+      "Meanwhile, heat olive oil in a large skillet over medium heat and sauté the minced garlic for 1 minute.",
+      "Pour in the crushed tomatoes and simmer gently for 10 minutes.",
+      "Stir in the heavy cream and half of the parmesan cheese, allowing it to heat through for 2 minutes.",
+      "Drain the pasta and toss it directly into the sauce along with the fresh basil. Top with remaining parmesan."
+    ]
+  }
+]

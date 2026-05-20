@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const recipesRouter = require("./routes/recipesRouter");
+import recipesRouter from "./routes/recipesRouter.js";
 
 app.use("/recipes", recipesRouter);
 
