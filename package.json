@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Cindy Yang",
   "type": "module",
-  "main": "app.ts",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

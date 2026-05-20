@@ -5,7 +5,7 @@ import type { Recipe } from "../types/recipeType.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const filePath = path.join(__dirname, "../recipes.json");
+const filePath = path.join(__dirname, "../../recipes.json");
 
 export const readAllRecipes = async (): Promise<Recipe[]> => {
     const rawData = await fs.readFile(filePath, "utf-8");
