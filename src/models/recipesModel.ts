@@ -12,8 +12,13 @@ export const readAllRecipes = async (): Promise<Recipe[]> => {
     return JSON.parse(rawData);
 };
 
-export const saveRecipe = async (newRecipe: Recipe): Promise<void> => {
-    const recipes = await readAllRecipes();
-    recipes.push(newRecipe);
-    await fs.writeFile(filePath, JSON.stringify(recipes, null, 2), "utf-8");
+export const saveRecipe = async (newRecipe: any): Promise<void> => {
+    try {
+        const recipes = await readAllRecipes();
+        recipes.push(newRecipe);
+
+        await fs.writeFile(filePath, JSON.stringify(recipes, null, 2), "utf-8");
+    } catch (error) {
+        console.error("Failed to write to data file:", error);
+    }
 };

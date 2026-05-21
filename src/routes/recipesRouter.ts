@@ -4,12 +4,9 @@ import * as recipesController from "../controllers/recipesController.js";
 
 const recipesRouter = Router();
 
+recipesRouter.get("/new", (req: Request, res: Response) => res.render("createRecipeForm"));
+recipesRouter.post("/new", recipesController.createRecipe);
 recipesRouter.get("/", recipesController.getAllRecipes);
-
 recipesRouter.get("/:id", recipesController.getRecipeById);
-
-recipesRouter.post("/", (req: Request, res: Response) => {
-    res.send("Recipe Received!");
-});
 
 export default recipesRouter;

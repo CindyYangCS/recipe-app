@@ -9,8 +9,12 @@
     <h1><% recipe.name %></h1>
     <div>
         <p><strong>Category:</strong> <%= recipe.category %></p>
-        <p><strong>Prep Time:</strong> <%= recipe.prepTime %> mins</p>
-        <p><strong>Cook Time:</strong> <%= recipe.cookTime %> mins</p>
+        <% if (recipe.prepTime) { %>
+            <p><strong>Prep Time:</strong> <%= recipe.prepTime %> mins</p>
+        <% } %>
+        <% if (recipe.cookTime) { %>
+            <p><strong>Cook Time:</strong> <%= recipe.cookTime %> mins</p>
+        <% } %>
         <p><strong>Servings:</strong> <%= recipe.servings %></p>
 
         <h3>Ingredients</h3>

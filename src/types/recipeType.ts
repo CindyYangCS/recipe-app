@@ -8,8 +8,8 @@ export interface Recipe {
     id: string;
     category: string;
     name: string;
-    prepTime?: number;
-    cookTime?: number;
+    prepTime?: number | undefined;
+    cookTime?: number | undefined;
     servings: number;
     ingredients: Ingredient[];
     instructions: string[];
